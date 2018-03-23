@@ -29,9 +29,7 @@ namespace RandomLab1
                 if (dm > dMax)
                     dMax = dm;
             }
-            return dMax * Math.Sqrt(N);
+            return (dMax * Math.Sqrt(N)) / 2;
         }
-
-        
     }
 }

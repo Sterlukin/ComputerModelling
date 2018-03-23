@@ -58,18 +58,31 @@
             this.txtBoxDx = new System.Windows.Forms.TextBox();
             this.txtBoxCm2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSeriesHypotize = new System.Windows.Forms.Label();
+            this.txtBoxN0 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtBoxRh = new System.Windows.Forms.TextBox();
-            this.txtBoxRb = new System.Windows.Forms.TextBox();
+            this.txtBoxp0 = new System.Windows.Forms.TextBox();
+            this.txtBoxK0 = new System.Windows.Forms.TextBox();
             this.txtBoxPirson = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtBoxKolmogorov = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtBoxR = new System.Windows.Forms.TextBox();
-            this.lblSeriesHypotize = new System.Windows.Forms.Label();
+            this.txtBoxd0 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtBoxomz = new System.Windows.Forms.TextBox();
+            this.txtBoxm0 = new System.Windows.Forms.TextBox();
+            this.txtBoxmzplus = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtBoxmzminus = new System.Windows.Forms.TextBox();
+            this.lblSeriasTest = new System.Windows.Forms.Label();
+            this.lblPirson = new System.Windows.Forms.Label();
+            this.lblKolmogorov = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -337,21 +350,61 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.lblKolmogorov);
+            this.panel3.Controls.Add(this.lblPirson);
+            this.panel3.Controls.Add(this.lblSeriasTest);
+            this.panel3.Controls.Add(this.txtBoxmzplus);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.txtBoxmzminus);
+            this.panel3.Controls.Add(this.txtBoxd0);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.label19);
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Controls.Add(this.txtBoxomz);
+            this.panel3.Controls.Add(this.txtBoxm0);
             this.panel3.Controls.Add(this.lblSeriesHypotize);
-            this.panel3.Controls.Add(this.txtBoxR);
+            this.panel3.Controls.Add(this.txtBoxN0);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.txtBoxRh);
-            this.panel3.Controls.Add(this.txtBoxRb);
+            this.panel3.Controls.Add(this.txtBoxp0);
+            this.panel3.Controls.Add(this.txtBoxK0);
             this.panel3.Controls.Add(this.txtBoxPirson);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.txtBoxKolmogorov);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Location = new System.Drawing.Point(12, 378);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(640, 162);
+            this.panel3.Size = new System.Drawing.Size(1013, 212);
             this.panel3.TabIndex = 9;
+            // 
+            // lblSeriesHypotize
+            // 
+            this.lblSeriesHypotize.AutoSize = true;
+            this.lblSeriesHypotize.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSeriesHypotize.Location = new System.Drawing.Point(263, 114);
+            this.lblSeriesHypotize.Name = "lblSeriesHypotize";
+            this.lblSeriesHypotize.Size = new System.Drawing.Size(0, 18);
+            this.lblSeriesHypotize.TabIndex = 10;
+            // 
+            // txtBoxN0
+            // 
+            this.txtBoxN0.Location = new System.Drawing.Point(458, 51);
+            this.txtBoxN0.Name = "txtBoxN0";
+            this.txtBoxN0.ReadOnly = true;
+            this.txtBoxN0.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxN0.TabIndex = 9;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(263, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(143, 18);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "N0 кол-во нулей:";
             // 
             // label16
             // 
@@ -359,9 +412,9 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.Location = new System.Drawing.Point(263, 83);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(34, 18);
+            this.label16.Size = new System.Drawing.Size(167, 18);
             this.label16.TabIndex = 7;
-            this.label16.Text = "Rh:";
+            this.label16.Text = "Вер-ть появления 0:";
             // 
             // label15
             // 
@@ -369,25 +422,25 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label15.Location = new System.Drawing.Point(263, 19);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 18);
+            this.label15.Size = new System.Drawing.Size(192, 18);
             this.label15.TabIndex = 6;
-            this.label15.Text = "Rb:";
+            this.label15.Text = "K0 кол-во серий нулей:";
             // 
-            // txtBoxRh
+            // txtBoxp0
             // 
-            this.txtBoxRh.Location = new System.Drawing.Point(419, 81);
-            this.txtBoxRh.Name = "txtBoxRh";
-            this.txtBoxRh.ReadOnly = true;
-            this.txtBoxRh.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxRh.TabIndex = 5;
+            this.txtBoxp0.Location = new System.Drawing.Point(458, 81);
+            this.txtBoxp0.Name = "txtBoxp0";
+            this.txtBoxp0.ReadOnly = true;
+            this.txtBoxp0.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxp0.TabIndex = 5;
             // 
-            // txtBoxRb
+            // txtBoxK0
             // 
-            this.txtBoxRb.Location = new System.Drawing.Point(419, 16);
-            this.txtBoxRb.Name = "txtBoxRb";
-            this.txtBoxRb.ReadOnly = true;
-            this.txtBoxRb.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxRb.TabIndex = 4;
+            this.txtBoxK0.Location = new System.Drawing.Point(458, 16);
+            this.txtBoxK0.Name = "txtBoxK0";
+            this.txtBoxK0.ReadOnly = true;
+            this.txtBoxK0.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxK0.TabIndex = 4;
             // 
             // txtBoxPirson
             // 
@@ -409,7 +462,7 @@
             // 
             // txtBoxKolmogorov
             // 
-            this.txtBoxKolmogorov.Location = new System.Drawing.Point(132, 52);
+            this.txtBoxKolmogorov.Location = new System.Drawing.Point(132, 83);
             this.txtBoxKolmogorov.Name = "txtBoxKolmogorov";
             this.txtBoxKolmogorov.ReadOnly = true;
             this.txtBoxKolmogorov.Size = new System.Drawing.Size(100, 20);
@@ -419,7 +472,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(12, 54);
+            this.label13.Location = new System.Drawing.Point(12, 81);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(111, 18);
             this.label13.TabIndex = 0;
@@ -435,38 +488,128 @@
             this.label12.TabIndex = 10;
             this.label12.Text = "Критерии";
             // 
-            // label17
+            // txtBoxd0
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(263, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(25, 18);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "R:";
+            this.txtBoxd0.Location = new System.Drawing.Point(843, 49);
+            this.txtBoxd0.Name = "txtBoxd0";
+            this.txtBoxd0.ReadOnly = true;
+            this.txtBoxd0.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxd0.TabIndex = 16;
             // 
-            // txtBoxR
+            // label18
             // 
-            this.txtBoxR.Location = new System.Drawing.Point(419, 49);
-            this.txtBoxR.Name = "txtBoxR";
-            this.txtBoxR.ReadOnly = true;
-            this.txtBoxR.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxR.TabIndex = 9;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.Location = new System.Drawing.Point(609, 49);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(98, 18);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "Дисперсия:";
             // 
-            // lblSeriesHypotize
+            // label19
             // 
-            this.lblSeriesHypotize.AutoSize = true;
-            this.lblSeriesHypotize.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblSeriesHypotize.Location = new System.Drawing.Point(263, 114);
-            this.lblSeriesHypotize.Name = "lblSeriesHypotize";
-            this.lblSeriesHypotize.Size = new System.Drawing.Size(0, 18);
-            this.lblSeriesHypotize.TabIndex = 10;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(609, 78);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(228, 18);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "Оценка ср. числа 0 в серии:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(609, 17);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(126, 18);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "Мат.ожидание:";
+            // 
+            // txtBoxomz
+            // 
+            this.txtBoxomz.Location = new System.Drawing.Point(843, 76);
+            this.txtBoxomz.Name = "txtBoxomz";
+            this.txtBoxomz.ReadOnly = true;
+            this.txtBoxomz.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxomz.TabIndex = 12;
+            // 
+            // txtBoxm0
+            // 
+            this.txtBoxm0.Location = new System.Drawing.Point(843, 14);
+            this.txtBoxm0.Name = "txtBoxm0";
+            this.txtBoxm0.ReadOnly = true;
+            this.txtBoxm0.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxm0.TabIndex = 11;
+            // 
+            // txtBoxmzplus
+            // 
+            this.txtBoxmzplus.Location = new System.Drawing.Point(843, 112);
+            this.txtBoxmzplus.Name = "txtBoxmzplus";
+            this.txtBoxmzplus.ReadOnly = true;
+            this.txtBoxmzplus.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxmzplus.TabIndex = 20;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Location = new System.Drawing.Point(609, 112);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(43, 18);
+            this.label21.TabIndex = 19;
+            this.label21.Text = "MZ-:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(609, 141);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(47, 18);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "MZ+:";
+            // 
+            // txtBoxmzminus
+            // 
+            this.txtBoxmzminus.Location = new System.Drawing.Point(843, 139);
+            this.txtBoxmzminus.Name = "txtBoxmzminus";
+            this.txtBoxmzminus.ReadOnly = true;
+            this.txtBoxmzminus.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxmzminus.TabIndex = 17;
+            // 
+            // lblSeriasTest
+            // 
+            this.lblSeriasTest.AutoSize = true;
+            this.lblSeriasTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSeriasTest.Location = new System.Drawing.Point(609, 172);
+            this.lblSeriasTest.Name = "lblSeriasTest";
+            this.lblSeriasTest.Size = new System.Drawing.Size(0, 18);
+            this.lblSeriasTest.TabIndex = 21;
+            // 
+            // lblPirson
+            // 
+            this.lblPirson.AutoSize = true;
+            this.lblPirson.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPirson.Location = new System.Drawing.Point(12, 49);
+            this.lblPirson.Name = "lblPirson";
+            this.lblPirson.Size = new System.Drawing.Size(0, 18);
+            this.lblPirson.TabIndex = 22;
+            // 
+            // lblKolmogorov
+            // 
+            this.lblKolmogorov.AutoSize = true;
+            this.lblKolmogorov.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblKolmogorov.Location = new System.Drawing.Point(16, 114);
+            this.lblKolmogorov.Name = "lblKolmogorov";
+            this.lblKolmogorov.Size = new System.Drawing.Size(0, 18);
+            this.lblKolmogorov.TabIndex = 23;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 550);
+            this.ClientSize = new System.Drawing.Size(1055, 595);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -529,11 +672,24 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtBoxRh;
-        private System.Windows.Forms.TextBox txtBoxRb;
-        private System.Windows.Forms.TextBox txtBoxR;
+        private System.Windows.Forms.TextBox txtBoxp0;
+        private System.Windows.Forms.TextBox txtBoxK0;
+        private System.Windows.Forms.TextBox txtBoxN0;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lblSeriesHypotize;
+        private System.Windows.Forms.TextBox txtBoxd0;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtBoxomz;
+        private System.Windows.Forms.TextBox txtBoxm0;
+        private System.Windows.Forms.TextBox txtBoxmzplus;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtBoxmzminus;
+        private System.Windows.Forms.Label lblSeriasTest;
+        private System.Windows.Forms.Label lblPirson;
+        private System.Windows.Forms.Label lblKolmogorov;
     }
 }
 
