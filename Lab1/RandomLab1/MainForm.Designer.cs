@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.buttonCount = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartFrequency = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartDistribution = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -57,8 +57,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtBoxDx = new System.Windows.Forms.TextBox();
             this.txtBoxCm2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFrequency)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDistribution)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDSequencySize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDSectionsNumber)).BeginInit();
@@ -77,37 +77,37 @@
             this.buttonCount.UseVisualStyleBackColor = true;
             this.buttonCount.Click += new System.EventHandler(this.buttonCountClick);
             // 
-            // chart1
+            // chartFrequency
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart1.Legends.Add(legend9);
-            this.chart1.Location = new System.Drawing.Point(269, 32);
-            this.chart1.Name = "chart1";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart1.Series.Add(series9);
-            this.chart1.Size = new System.Drawing.Size(383, 312);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "chart1";
+            chartArea1.Name = "ChartArea1";
+            this.chartFrequency.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFrequency.Legends.Add(legend1);
+            this.chartFrequency.Location = new System.Drawing.Point(269, 32);
+            this.chartFrequency.Name = "chartFrequency";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFrequency.Series.Add(series1);
+            this.chartFrequency.Size = new System.Drawing.Size(383, 312);
+            this.chartFrequency.TabIndex = 1;
+            this.chartFrequency.Text = "chartFrequency";
             // 
-            // chart2
+            // chartDistribution
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart2.Legends.Add(legend10);
-            this.chart2.Location = new System.Drawing.Point(658, 30);
-            this.chart2.Name = "chart2";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chart2.Series.Add(series10);
-            this.chart2.Size = new System.Drawing.Size(383, 314);
-            this.chart2.TabIndex = 2;
-            this.chart2.Text = "chart2";
+            chartArea2.Name = "ChartArea1";
+            this.chartDistribution.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartDistribution.Legends.Add(legend2);
+            this.chartDistribution.Location = new System.Drawing.Point(658, 30);
+            this.chartDistribution.Name = "chartDistribution";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartDistribution.Series.Add(series2);
+            this.chartDistribution.Size = new System.Drawing.Size(383, 314);
+            this.chartDistribution.TabIndex = 2;
+            this.chartDistribution.Text = "chartDistribution";
             // 
             // label1
             // 
@@ -233,7 +233,6 @@
             this.label7.Size = new System.Drawing.Size(134, 18);
             this.label7.TabIndex = 7;
             this.label7.Text = "Характеристики";
-            this.label7.Visible = false;
             // 
             // panel2
             // 
@@ -250,7 +249,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(251, 112);
             this.panel2.TabIndex = 8;
-            this.panel2.Visible = false;
             // 
             // label11
             // 
@@ -331,13 +329,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.chart2);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartDistribution);
+            this.Controls.Add(this.chartFrequency);
             this.Controls.Add(this.buttonCount);
             this.Name = "MainForm";
             this.Text = "Генератор случайных чисел";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFrequency)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDistribution)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUDSequencySize)).EndInit();
@@ -353,8 +351,8 @@
         #endregion
 
         private System.Windows.Forms.Button buttonCount;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFrequency;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartDistribution;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
