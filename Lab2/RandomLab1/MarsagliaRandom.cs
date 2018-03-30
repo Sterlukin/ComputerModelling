@@ -31,8 +31,5 @@ namespace RandomLab1
 
             return result;
         }
-
-
-
     }
 }

@@ -4,7 +4,6 @@ namespace RandomLab1
 {
     public static class Criterias
     {
-        //Хи-квадрат Пирсон
         public static double GetPirson(int[] hst, double pt, int k, int n)
         {
             double xi = 0.0;
@@ -16,20 +15,19 @@ namespace RandomLab1
             return xi;
         }
 
-        //Колмогоров
-        public static double GetLambda(double[] S, int N)
+        public static double GetLambda(double[] values)
         {
             double dMax = 0.0;
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < values.Length; i++)
             {
-                double dp = Math.Abs((double)(i + 1) / N - S[i]);
-                double dm = Math.Abs(S[i] - (double)i / N);
+                double dp = Math.Abs((double)(i + 1) / values.Length - values[i]);
+                double dm = Math.Abs(values[i] - (double)i / values.Length);
                 if (dp > dMax)
                     dMax = dp;
                 if (dm > dMax)
                     dMax = dm;
             }
-            return (dMax * Math.Sqrt(N)) / 2;
+            return (dMax * Math.Sqrt(values.Length)) / 2;
         }
     }
 }
